@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 import { Given, When, And, Then } from 'cypress-cucumber-preprocessor/steps';
 import { actions }from  "../../PageObject/PageActions/PageActions"
+import { config } from '../../support/config';
 
 
 Given('Je me rends sur le site SwagLabs', () => {
@@ -8,7 +9,7 @@ Given('Je me rends sur le site SwagLabs', () => {
 });
 
 When('Je saisis username et mot de passe valides et je clique sur le button login', () => {
-  actions.login('standard_user','secret_sauce');
+  actions.login(config.username, config.password);
 });
 
 Then('La page des produits s\'affiche', () => {

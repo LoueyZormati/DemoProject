@@ -16,5 +16,8 @@
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinations": true,
     "stepDefinitions": "cypress/e2e/"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^21.0.2"
   }
 }

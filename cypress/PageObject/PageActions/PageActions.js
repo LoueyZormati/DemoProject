@@ -1,12 +1,14 @@
 // cypress/support/actions.js
-import { pageElements } from '../PageElement/WebElement'; 
+import { pageElements } from '../PageElement/WebElement';
+import { config } from '../../support/config';
 
 export const actions = {
   visitLoginPage() {
-    cy.visit("https://www.saucedemo.com/");
+    cy.visit(config.url);
   },
 
   login(username, password) {
+    console.log(`Tentative de connexion avec username: ${username} et mot de passe: ${password}`);
     if (username !== '') {
       cy.get(pageElements.usernameInput).type(username);
     }
