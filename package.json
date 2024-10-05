@@ -3,21 +3,26 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "cypress": "^13.15.0",
-    "cypress-cucumber-preprocessor": "^4.3.1"
-  },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinations": true,
     "stepDefinitions": "cypress/e2e/"
   },
   "devDependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^21.0.2"
+    "@badeball/cypress-cucumber-preprocessor": "^21.0.2",
+    "allure-commandline": "^2.30.0",
+    "allure-mocha": "^3.0.4",
+    "cypress": "^13.15.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mocha": "^9.2.2",
+    "mocha-allure-reporter": "^1.4.0",
+    "mochawesome": "^7.1.3"
   }
 }
