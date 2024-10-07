@@ -1,1 +1,1 @@
-[{"data":{}}]
+[{"buildOrder":23,"reportUrl":"http://localhost:8080/job/CypressProject/23/allure","reportName":"AllureReport","data":{"duration":30879}},{"buildOrder":18,"reportUrl":"http://localhost:8080/job/CypressProject/18/allure","reportName":"AllureReport","data":{"duration":68721}},{"buildOrder":17,"reportUrl":"http://localhost:8080/job/CypressProject/17/allure","reportName":"AllureReport","data":{"duration":31348}},{"buildOrder":16,"reportUrl":"http://localhost:8080/job/CypressProject/16/allure","reportName":"AllureReport","data":{"duration":75807}}]
